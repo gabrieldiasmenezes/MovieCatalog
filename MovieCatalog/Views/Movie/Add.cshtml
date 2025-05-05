@@ -1,0 +1,133 @@
+﻿@model MovieCatalog.Models.Movie
+@using MovieCatalog.Models
+
+@{
+    ViewData["Title"] = "Adicionar Novo Filme";
+}
+
+<style>
+    body {
+        background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-wrapper {
+        max-width: 600px;
+        margin: 60px auto;
+        padding: 30px;
+        background-color: rgba(20, 20, 20, 0.85);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    }
+
+        .form-wrapper h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #e50914;
+        }
+
+    .form-control,
+    .form-select {
+        background-color: #333;
+        border: none;
+        color: white;
+    }
+
+        .form-control::placeholder {
+            color: #aaa;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #e50914;
+            box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.25);
+        }
+
+    .btn-primary {
+        background-color: #e50914;
+        border: none;
+        transition: 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #b00610;
+        }
+
+    .btn-secondary {
+        background-color: transparent;
+        border: 1px solid #aaa;
+        color: #aaa;
+        transition: 0.3s;
+    }
+
+        .btn-secondary:hover {
+            background-color: #444;
+            color: white;
+        }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    .text-danger {
+        font-size: 0.875rem;
+    }
+</style>
+
+<div class="form-wrapper">
+    <h2>Adicionar Novo Filme</h2>
+
+    <form asp-action="Add" method="post" novalidate>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Nome do Filme</label>
+            <input asp-for="Name" class="form-control" placeholder="Ex: O Senhor dos Anéis" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Director" class="form-label">Diretor</label>
+            <input asp-for="Director" class="form-control" placeholder="Ex: Peter Jackson" />
+            <span asp-validation-for="Director" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ReleaseYear" class="form-label">Ano de Lançamento</label>
+            <input asp-for="ReleaseYear" class="form-control" placeholder="Ex: 2001" />
+            <span asp-validation-for="ReleaseYear" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Genre" class="form-label">Gênero</label>
+            <select asp-for="Genre" class="form-select" asp-items="Html.GetEnumSelectList<Genre>()">
+                <option value="">Selecione um gênero</option>
+            </select>
+            <span asp-validation-for="Genre" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Descrição</label>
+            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Escreva uma sinopse do filme..."></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="ImageUrl" class="form-label">URL da Imagem (opcional)</label>
+            <input asp-for="ImageUrl" class="form-control" placeholder="https://..." />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary px-4">Salvar</button>
+            <a asp-action="Index" class="btn btn-secondary px-4">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

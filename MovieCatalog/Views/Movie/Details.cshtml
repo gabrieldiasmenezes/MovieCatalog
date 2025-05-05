@@ -1,0 +1,93 @@
+﻿@model MovieCatalog.Models.Movie
+
+@{
+    ViewData["Title"] = "Detalhes do Filme";
+}
+
+<div class="container">
+    <h2 class="text-center text-light">@Model.Name</h2>
+
+    <!-- Detalhes do Filme -->
+    <div class="movie-details text-light">
+        <div class="row">
+            <!-- Imagem do Filme -->
+            <div class="col-md-4">
+                <img src="@Model.ImageUrl" class="img-fluid rounded" alt="@Model.Name" style="object-fit: cover; width: 100%; height: auto;">
+            </div>
+
+            <!-- Informações do Filme -->
+            <div class="col-md-8">
+                <div class="movie-info">
+                    <p><strong>Diretor:</strong> @Model.Director</p>
+                    <p><strong>Gênero:</strong> @Model.Genre</p>
+                    <p><strong>Ano de Lançamento:</strong> @Model.ReleaseYear</p>
+                    <p><strong>Descrição:</strong></p>
+                    <p>@Model.Description</p>
+                </div>
+
+                <!-- Botões de Editar e Excluir -->
+                <div class="movie-actions mt-4">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger" onclick="return confirm('Tem certeza de que deseja excluir este filme?');">Excluir</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão de Voltar -->
+        <div class="mt-4">
+            <a asp-action="Index" class="btn btn-secondary">Voltar ao Catálogo</a>
+        </div>
+    </div>
+</div>
+
+<!-- CSS diretamente na página -->
+<style>
+    /* Configuração do fundo preto para a página inteira */
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    /* Ajustes no estilo do título */
+    h2 {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    /* Estilo do conteúdo do filme */
+    .movie-info {
+        margin-top: 20px;
+    }
+
+    /* Botões de Editar e Excluir */
+    .movie-actions a {
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .movie-actions .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+    }
+
+    .movie-actions .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .movie-actions a:hover {
+        opacity: 0.8;
+    }
+
+    /* Botão de Voltar */
+    .btn-secondary {
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+</style>
