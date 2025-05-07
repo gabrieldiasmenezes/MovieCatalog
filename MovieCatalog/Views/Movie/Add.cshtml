@@ -5,6 +5,56 @@
     ViewData["Title"] = "Adicionar Novo Filme";
 }
 
+
+
+<div class="form-wrapper">
+    <h2>Adicionar Novo Filme</h2>
+
+    <form asp-action="Add" method="post" novalidate>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Nome do Filme</label>
+            <input asp-for="Name" class="form-control" placeholder="Ex: O Senhor dos Anéis" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Director" class="form-label">Diretor</label>
+            <input asp-for="Director" class="form-control" placeholder="Ex: Peter Jackson" />
+            <span asp-validation-for="Director" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ReleaseYear" class="form-label">Ano de Lançamento</label>
+            <input asp-for="ReleaseYear" class="form-control" placeholder="Ex: 2001" />
+            <span asp-validation-for="ReleaseYear" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Genre" class="form-label">Gênero</label>
+            <select asp-for="Genre" class="form-select" asp-items="Html.GetEnumSelectList<Genre>()">
+                <option value="">Selecione um gênero</option>
+            </select>
+            <span asp-validation-for="Genre" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Descrição</label>
+            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Escreva uma sinopse do filme..."></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="ImageUrl" class="form-label">URL da Imagem</label>
+            <input asp-for="ImageUrl" class="form-control" placeholder="https://..." />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary px-4">Salvar</button>
+            <a asp-action="Index" class="btn btn-secondary px-4">Cancelar</a>
+        </div>
+    </form>
+</div>
 <style>
     body {
         background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
@@ -78,56 +128,6 @@
         font-size: 0.875rem;
     }
 </style>
-
-<div class="form-wrapper">
-    <h2>Adicionar Novo Filme</h2>
-
-    <form asp-action="Add" method="post" novalidate>
-        <div class="mb-3">
-            <label asp-for="Name" class="form-label">Nome do Filme</label>
-            <input asp-for="Name" class="form-control" placeholder="Ex: O Senhor dos Anéis" />
-            <span asp-validation-for="Name" class="text-danger"></span>
-        </div>
-
-        <div class="mb-3">
-            <label asp-for="Director" class="form-label">Diretor</label>
-            <input asp-for="Director" class="form-control" placeholder="Ex: Peter Jackson" />
-            <span asp-validation-for="Director" class="text-danger"></span>
-        </div>
-
-        <div class="mb-3">
-            <label asp-for="ReleaseYear" class="form-label">Ano de Lançamento</label>
-            <input asp-for="ReleaseYear" class="form-control" placeholder="Ex: 2001" />
-            <span asp-validation-for="ReleaseYear" class="text-danger"></span>
-        </div>
-
-        <div class="mb-3">
-            <label asp-for="Genre" class="form-label">Gênero</label>
-            <select asp-for="Genre" class="form-select" asp-items="Html.GetEnumSelectList<Genre>()">
-                <option value="">Selecione um gênero</option>
-            </select>
-            <span asp-validation-for="Genre" class="text-danger"></span>
-        </div>
-
-        <div class="mb-3">
-            <label asp-for="Description" class="form-label">Descrição</label>
-            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Escreva uma sinopse do filme..."></textarea>
-            <span asp-validation-for="Description" class="text-danger"></span>
-        </div>
-
-        <div class="mb-4">
-            <label asp-for="ImageUrl" class="form-label">URL da Imagem (opcional)</label>
-            <input asp-for="ImageUrl" class="form-control" placeholder="https://..." />
-            <span asp-validation-for="ImageUrl" class="text-danger"></span>
-        </div>
-
-        <div class="d-flex justify-content-between">
-            <button type="submit" class="btn btn-primary px-4">Salvar</button>
-            <a asp-action="Index" class="btn btn-secondary px-4">Cancelar</a>
-        </div>
-    </form>
-</div>
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
