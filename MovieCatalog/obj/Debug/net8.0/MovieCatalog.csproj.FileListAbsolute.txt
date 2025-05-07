@@ -32,3 +32,34 @@ C:\Users\Dell\OneDrive - Fiap-Faculdade de Informática e Administração Paulis
 C:\Users\Dell\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\one drive\c#\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.pdb
 C:\Users\Dell\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\one drive\c#\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.genruntimeconfig.cache
 C:\Users\Dell\OneDrive - Fiap-Faculdade de Informática e Administração Paulista\one drive\c#\MovieCatalog\MovieCatalog\obj\Debug\net8.0\ref\MovieCatalog.dll
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\appsettings.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\MovieCatalog.staticwebassets.runtime.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\MovieCatalog.exe
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\MovieCatalog.deps.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\MovieCatalog.runtimeconfig.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\MovieCatalog.dll
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\bin\Debug\net8.0\MovieCatalog.pdb
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.AssemblyInfoInputs.cache
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.AssemblyInfo.cs
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.csproj.CoreCompileInputs.cache
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.RazorAssemblyInfo.cache
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.RazorAssemblyInfo.cs
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.sourcelink.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\staticwebassets\msbuild.MovieCatalog.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\staticwebassets\msbuild.build.MovieCatalog.props
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MovieCatalog.props
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MovieCatalog.props
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\scopedcss\bundle\MovieCatalog.styles.css
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\scopedcss\projectbundle\MovieCatalog.bundle.scp.css
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.dll
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\refint\MovieCatalog.dll
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.pdb
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\MovieCatalog.genruntimeconfig.cache
+C:\Users\labsfiap\MovieCatalog\MovieCatalog\obj\Debug\net8.0\ref\MovieCatalog.dll

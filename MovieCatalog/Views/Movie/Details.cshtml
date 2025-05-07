@@ -25,10 +25,12 @@
                     <p>@Model.Description</p>
                 </div>
 
-                <!-- Botões de Editar e Excluir -->
-                <div class="movie-actions mt-4">
-                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
-                    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger" onclick="return confirm('Tem certeza de que deseja excluir este filme?');">Excluir</a>
+                <!-- Botões de Excluir e Editar -->
+                <div class="movie-actions mt-4 d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning rounded-pill px-4">Editar</a>
+                    <form asp-action="Delete" asp-route-id="@Model.Id" method="post" onsubmit="return confirm('Tem certeza de que deseja excluir este filme?');">
+                        <button type="submit" class="btn btn-danger rounded-pill px-4">Excluir</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -52,22 +54,19 @@
         margin-top: 20px;
     }
 
-    /* Ajustes no estilo do título */
     h2 {
         color: #fff;
         margin-bottom: 30px;
     }
 
-    /* Estilo do conteúdo do filme */
     .movie-info {
         margin-top: 20px;
     }
 
-    /* Botões de Editar e Excluir */
-    .movie-actions a {
-        border-radius: 25px;
-        padding: 10px 20px;
+    .movie-actions .btn {
         font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 25px;
     }
 
     .movie-actions .btn-warning {
@@ -80,11 +79,10 @@
         border-color: #dc3545;
     }
 
-    .movie-actions a:hover {
+    .movie-actions .btn:hover {
         opacity: 0.8;
     }
 
-    /* Botão de Voltar */
     .btn-secondary {
         border-radius: 25px;
         padding: 10px 20px;
